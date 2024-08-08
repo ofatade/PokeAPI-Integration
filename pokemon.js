@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayPokemonData(data) {
         pokemonData.innerHTML = `
-            <div class="card">
+            <div class="card bg-success-subtle">
                 <img src="${data.sprites.front_default}" class="card-img-top" alt="${data.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${data.name}</h5>
-                    <p class="card-text">ID: ${data.id}</p>
-                    <p class="card-text">Type: ${data.types.map(type => type.type.name).join(', ')}</p>
+                <div class="card-body bg-info">
+                    <h5 class="card-title bg-warning">${data.name}</h5>
+                    <p class="card-text bg-success">ID: ${data.id}</p>
+                    <p class="card-text bg-danger-subtle">Type: ${data.types.map(type => type.type.name).join(', ')}</p>
                     <a href="details.html?id=${data.id}" class="btn btn-primary">View Details</a>
                 </div>
             </div>
@@ -53,12 +53,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayPokemonDetails(data) {
         pokemonDetails.innerHTML = `
-            <div class="card">
+            <div class="card bg-success-subtle">
                 <img src="${data.sprites.front_default}" class="card-img-top" alt="${data.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${data.name}</h5>
-                    <p class="card-text">ID: ${data.id}</p>
-                    <p class="card-text">Type: ${data.types.map(type => type.type.name).join(', ')}</p>
+                <div class="card-body bg-danger-subtle">
+                    <h5 class="card-title bg-warning">${data.name}</h5>
+                    <p class="card-text bg-info-subtle">ID: ${data.id}</p>
+                    <p class="card-text bg-info">Type: ${data.types.map(type => type.type.name).join(', ')}</p>
                     <h6>Abilities:</h6>
                     <ul class="list-group">
                         ${data.abilities.map(ability => `<li class="list-group-item">${ability.ability.name}</li>`).join('')}
