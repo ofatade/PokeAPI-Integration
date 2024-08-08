@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    background-size: cover;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+#pokemonData, #pokemonDetails {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}

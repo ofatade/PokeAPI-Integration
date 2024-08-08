@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Explorer - Search</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link href="pokemon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="homepage.html">Pokémon Explorer</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto bg-info">
+                <li class="nav-item"><a class="nav-link" href="search.html">Search Pokémon</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-4 bg-danger">
+        <h2>Search Pokémon</h2>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="pokemonName">Enter Pokémon Name or ID</label>
+                <input type="text" class="form-control" id="pokemonName" placeholder="e.g., Pikachu or 25">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div id="pokemonData" class="mt-4"></div>
+    </div>
+    <script src="pokemon.js"></script>
+</body>
+</html>
